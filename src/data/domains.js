@@ -35,7 +35,7 @@ export const domainsData = [
             darkerBg: "bg-orange-500",
         },
         content:
-            "We build apps, websites, automations, and tools that make college projects and events run smoothly — from registrations to certificates. No matter your level, you’ll learn by coding, debugging, and problem-solving with real projects. You’ll explore Python, React, Node.js, APIs, and Git while developing logical thinking and teamwork.\n\nAt MERIISE, your work has impact — the projects you create are used by students and staff, giving you practical experience you can carry anywhere.",
+            "We build apps, websites, automations, and tools that make college projects and events run smoothly — from registrations to certificates. No matter your level, you’ll learn by coding, debugging, and problem-solving with real projects. You’ll explore Java, Python, Web dev, App dev, and Git while developing logical thinking and teamwork.\n\nAt MERIISE, your work has impact — the projects you create are used by students and staff, giving you practical experience you can carry anywhere.",
     },
     {
 
