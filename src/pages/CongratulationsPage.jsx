@@ -29,14 +29,12 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
         const fetchAndPrepareAssets = async () => {
             setLoading(true);
             try {
-                // Load logo in parallel with Pokémon data for efficiency
                 const logoPromise = toBase64("./meriise.png");
 
-                // Set a default Pokémon ID in case the count endpoint fails
-                let pokemonId = 25; // Default to Pikachu (reliable fallback)
+                let pokemonId = 25; 
 
                 try {
-                    // Fetch total count with 3 second timeout
+                   
                     const controller = new AbortController();
                     const timeoutId = setTimeout(
                         () => controller.abort(),
@@ -59,7 +57,7 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
                     console.log("Using fallback Pokémon ID:", pokemonId);
                 }
 
-                // Fetch the Pokémon with 5 second timeout
+                
                 const pokemonController = new AbortController();
                 const pokemonTimeoutId = setTimeout(
                     () => pokemonController.abort(),
@@ -76,7 +74,7 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
                 const imageUrl =
                     data.sprites.other["official-artwork"].front_default;
 
-                // Wait for both image and logo to load
+                
                 const [pokemonBase64, logoBase64] = await Promise.all([
                     toBase64(imageUrl),
                     logoPromise,
@@ -88,12 +86,12 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
             } catch (error) {
                 console.error("Failed to fetch assets:", error);
 
-                // Ultimate fallback - guaranteed to work
+                
                 try {
                     const logoBase64 = await toBase64("./meriise.png");
                     setLogoImageBase64(logoBase64);
 
-                    // Pikachu is always reliable
+                     
                     const response = await fetch(
                         "https://pokeapi.co/api/v2/pokemon/25"
                     );
@@ -105,9 +103,9 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
                     setPokemonImageBase64(pokemonBase64);
                     setPokemon({ id: data.id, name: data.name });
                 } catch (finalError) {
-                    // Even if everything fails, don't leave user hanging
+                    
                     setPokemon({ id: 25, name: "pikachu" });
-                    setLogoImageBase64("./meriise.png"); // Direct fallback
+                    setLogoImageBase64("./meriise.png"); 
                 }
             } finally {
                 setLoading(false);
@@ -120,10 +118,10 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
         exportComponentAsPNG(cardRef, {
             fileName: `${formData?.name || "trainer"}-card.png`,
             html2CanvasOptions: {
-                scale: 3, // Use 3x scale for better quality
-                useCORS: true, // Handle cross-origin images
+                scale: 3, 
+                useCORS: true, 
                 allowTaint: true,
-                backgroundColor: null, // Transparent background
+                backgroundColor: null, 
                 logging: false,
             },
         });

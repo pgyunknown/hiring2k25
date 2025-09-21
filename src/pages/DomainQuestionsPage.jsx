@@ -53,7 +53,7 @@ const DomainQuestionsPage = ({ domain, onNavigate }) => {
                         className="h-20 absolute -right-8 -top-8"
                     />
                 </div>
-                {/* Intro / CTA button removed as we now show content directly */}
+                
                 <div
                     className={`w-full p-6 bg-stone-100/80 rounded-3xl border-4 ${domain.theme.border} relative`}
                 >

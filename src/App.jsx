@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { domainsData } from "./data/domains.js";
 
-// Page Components
 import HomePage from "./pages/HomePage.jsx";
 import DomainsPage from "./pages/DomainsPage.jsx";
 import DomainQuestionsPage from "./pages/DomainQuestionsPage.jsx";
@@ -36,7 +35,7 @@ const App = () => {
     const renderPage = () => {
         const domain = domainsData.find((d) => d.id === selectedDomainId);
 
-        // A wrapper component to apply consistent page styling and prevent overflow
+        
         const PageWrapper = ({ children, className }) => (
             <main
                 className={`min-h-screen w-full flex items-center justify-center  font-sans ${className}`}
@@ -105,7 +104,6 @@ const App = () => {
 
     return (
         <>
-            {/* Global styles remain here */}
             <style>
                 {`
                     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Nunito:wght@400;600;700;800&display=swap');

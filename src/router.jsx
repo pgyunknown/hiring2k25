@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { domainsData } from '/src/data/domains.js';
 
-// Page Components
+
 import HomePage from '/src/pages/HomePage.jsx';
 import DomainsPage from '/src/pages/DomainsPage.jsx';
 import DomainQuestionsPage from '/src/pages/DomainQuestionsPage.jsx';
@@ -9,43 +9,43 @@ import DomainFormPage from '/src/pages/DomainFormPage.jsx';
 import CongratulationsPage from '/src/pages/CongratulationsPage.jsx';
 
 const App = () => {
-    // We now store the entire page state in a single object
+
     const [currentState, setCurrentState] = useState({
         page: 'home',
         domainId: null,
         formData: null,
     });
 
-    // This effect sets up the listener for the browser's back button.
+
     useEffect(() => {
         const handlePopState = (event) => {
-            // When the user clicks back, the browser provides the previous state.
-            // We update our component to match it.
+
+
             if (event.state) {
                 setCurrentState(event.state);
             }
         };
 
-        // Add the event listener when the component mounts
+
         window.addEventListener('popstate', handlePopState);
 
-        // Clean up the event listener when the component unmounts
+
         return () => {
             window.removeEventListener('popstate', handlePopState);
         };
-    }, []); // The empty array ensures this effect runs only once.
+    }, []); 
 
     const handleNavigation = (newPage, domainId = null, data = null) => {
         const newState = {
             page: newPage,
-            // Carry over the domainId if it's not explicitly changed
+  
             domainId: domainId || currentState.domainId, 
             formData: data,
         };
         
-        // Push the new state into the browser's history stack
+
         window.history.pushState(newState, '');
-        // Update the component's state to render the new page
+
         setCurrentState(newState);
     };
 

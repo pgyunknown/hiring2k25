@@ -1,4 +1,3 @@
-// All content for the domains is managed here.
 export const domainsData = [
     {
         id: "digital",
@@ -6,9 +5,9 @@ export const domainsData = [
         description:
             " Love designing, editing, or creating content that clicks? The Digital Team is where your ideas come to life in fun and engaging ways.",
         imageUrl:
-            "./pikahello.png", // Pikachu
+            "./pikahello.png", 
         evolvedImageUrl:
-            "./pichu.png", // Raichu
+            "./pichu.png", 
         theme: {
             bg: "bg-yellow-400",
             button: "bg-yellow-600",
@@ -25,9 +24,9 @@ export const domainsData = [
         description:
             "If you enjoy solving problems or building new things, the Technical Team is where ideas turn into working solutions.",
         imageUrl:
-            "./chartech.png", // Charmander
+            "./chartech.png", 
         evolvedImageUrl:
-            "./charizard.png", // Charmeleon
+            "./charizard.png", 
         theme: {
             bg: "bg-orange-400",
             button: "bg-orange-600",
@@ -44,9 +43,9 @@ export const domainsData = [
         description:
             " Love sketching, doodling, or experimenting with visuals? The Creative Team is where imagination meets expression.",
         imageUrl:
-            "./bulbacreative.png", // Bulbasaur
+            "./bulbacreative.png", 
         evolvedImageUrl:
-            "./bulbaevo.png", // Ivysaur
+            "./bulbaevo.png",
         theme: {
             bg: "bg-green-400",
             button: "bg-green-600",
@@ -63,9 +62,9 @@ export const domainsData = [
         description:
             "If you enjoy writing or communicating, the Editorial Team helps ideas reach people in clear and engaging ways.",
         imageUrl:
-            "./squirtleedit.png", // Squirtle
+            "./squirtleedit.png", 
         evolvedImageUrl:
-            "./squirtleuncle.png", // Wartortle
+            "./squirtleuncle.png", 
         theme: {
             bg: "bg-sky-400",
             button: "bg-sky-600",
@@ -82,9 +81,9 @@ export const domainsData = [
         description:
             "Got a big idea? Love experimenting? The Startup & Research Team is where curiosity turns into action.",
         imageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png", // Porygon
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png",
         evolvedImageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png", // Porygon2
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png", 
         theme: {
             bg: "bg-purple-400",
             button: "bg-purple-600",
@@ -101,9 +100,9 @@ export const domainsData = [
         description:
             "Love bringing people together and making things happen? The Event Organizing Team is your chance to lead and coordinate impactful college experiences.",
         imageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png", // Jigglypuff
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png", 
         evolvedImageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png", // Wigglytuff
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png", 
         theme: {
             bg: "bg-indigo-400",
             button: "bg-indigo-600",
@@ -120,9 +119,9 @@ export const domainsData = [
         description:
             " Not sure where you fit yet? That’s completely fine — MERIISE is built for exploration.",
         imageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png", // Mew
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png", 
         evolvedImageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png", // Mewtwo
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png", 
         theme: {
             bg: "bg-pink-400",
             button: "bg-pink-600",

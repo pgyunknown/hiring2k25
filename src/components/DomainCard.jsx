@@ -1,9 +1,9 @@
 import React from 'react';
 
 const DomainCard = ({ data, isExpanded, onToggle, onApply }) => {
-    // Add a guard clause to prevent crashing if the data prop is not passed.
+
     if (!data) {
-        return null; // or render a loading/error state
+        return null; 
     }
 
     const { name, description, imageUrl, theme } = data;
@@ -11,22 +11,19 @@ const DomainCard = ({ data, isExpanded, onToggle, onApply }) => {
     return (
         <div 
             onClick={onToggle}
-            className="relative w-full max-w-sm mx-auto cursor-pointer pt-8" // Add padding-top for the Pokemon
+            className="relative w-full max-w-sm mx-auto cursor-pointer pt-8" for the Pokemon
         >
-            {/* Main Card Body - This is now in the normal document flow */}
             <div className={`
                 relative w-full bg-stone-100 
                 border-2 border-gray-400 rounded-3xl
                 overflow-hidden 
                 transition-all duration-500 ease-in-out
             `}>
-                {/* Diagonal Color Background */}
                 <div 
                     className={`absolute top-0 right-0 h-full ${theme.bg} 
                     transition-all duration-500 ease-in-out
                     ${isExpanded ? 'w-full' : 'w-1/2'}
                     `}
-                    // This style animates the clip-path to create the "fill" effect
                     style={{ 
                         clipPath: isExpanded 
                             ? 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' 
@@ -34,29 +31,25 @@ const DomainCard = ({ data, isExpanded, onToggle, onApply }) => {
                     }}
                 />
 
-                {/* Content */}
                 <div className="p-4 relative z-10">
-                    {/* Title container - now centered when collapsed */}
                     <div className={`h-12 font-fredoka font-medium translate-y-2 transition-all duration-300 ${!isExpanded ? 'text-left' : 'text-left'}`}>
                         <h2 className="text-3xl  text-gray-800">
                             {name}
                         </h2>
                     </div>
                     
-                    {/* Collapsible Section using CSS Grid for smooth height transition */}
                     <div className={`
                         grid transition-[grid-template-rows] duration-500 ease-in-out
                         ${isExpanded ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}
                     `}>
                         <div className="overflow-hidden">
-                            {/* This container ensures the text and button don't go behind the Pokemon */}
                             <div className="w-[55%]"> 
                                 <p className="text-sm text-white leading-tight pt-2 font-semibold tracking-wide">
                                     {description}
                                 </p>
                                 <button 
                                     onClick={(e) => {
-                                        e.stopPropagation(); // Prevents the card from toggling
+                                        e.stopPropagation(); 
                                         onApply();
                                     }}
                                     className={`
