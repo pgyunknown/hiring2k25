@@ -1,6 +1,9 @@
 # 🚀 MERIISE Hiring App 2025 - Where Innovation Goes BOOM! 💥
 
-![Meriise Logo](./public/meriise.png)
+<p align="center">
+  <img src="./public/meriise.png" alt="Meriise Logo" width="100" height="100" style="border-radius: 50%;">
+</p>
+
 Hey there! Welcome to the **ultimate hiring portal** for **ME-RIISE** - you know, the Malnad Enclave for Research, Innovation, Incubation, Startups and Entrepreneurship! We're not your average college thing; we're this **full-blown innovation powerhouse** that's about to make entrepreneurship explode! 💣🔥
 
 ## What the Heck is This?
@@ -54,22 +57,13 @@ Got some wild ideas? Wanna make Meriise even more epic? Fork it, send a PR, and 
 
 **Ready to evolve? Jump in now and let's make your career go BOOM!** 🚀💥
 
-## Contributors 🧑‍💻🎨
+### Contributors 🧑‍💻🎨
 
-### Coded by
 
-![Max](./public/pikahello.png)  
-**Max!!**
+| Coded by 💻 | Designed by 🎨 |
+| :---: | :---: |
+| <img src="./public/pikahello.png" alt="Max" width="75" height="75" style="border-radius: 50%;"> <br/> **Max!!** <br/> [Email](mailto:dizziedbliss@gmail.com) | <img src="./public/bulbacreative.png" alt="Bilvatej" width="75" height="75" style="border-radius: 50%;"> <br/> **Bilvatej** <br/> [Email](mailto:bilvatejhy@gmail.com) |
+| <img src="./public/charmandar.png" alt="PGY" width="75" height="75" style="border-radius: 50%;"> <br/> **PGY** <br/> [Email](mailto:gokulyadavdev@gmail.com) | <img src="./public/mewfloat.png" alt="Kishan" width="75" height="75" style="border-radius: 50%;"> <br/> **Kishan** <br/> [Email](mailto:Kishanbgowda19@gmail.com) |
 
-![PGY](./public/charmandar.png)  
-**PGY**
-
-### Designed by
-
-![Bilvatej](./public//bulbacreative.png)  
-**Bilvatej**
-
-![Kishan](./public/mewfloat.png)  
-**Kishan**
 
 *Disclaimer: No real explosions here, but innovation? It's blowing up everywhere.*
