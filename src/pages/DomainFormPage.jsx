@@ -66,15 +66,15 @@ const DomainFormPage = ({ domain, onNavigate }) => {
 
             <div className="w-full max-w-sm mx-auto flex flex-col items-center gap-y-4 animate-fade-in relative">
                 <img
-                    src="./meriise.png"
-                    alt="MERIISE Foundation Logo"
-                    className="mx-auto h-20 object-contain"
-                    onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src =
-                            "https://placehold.co/300x100/E0F2FE/0ea5e9?text=MERIISE+FOUNDATION";
-                    }}
-                />
+                src="./meriise.png"
+                alt="MERIISE Foundation Logo"
+                className="h-32"
+                onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                        "https://placehold.co/300x100/E0F2FE/0ea5e9?text=MERIISE+FOUNDATION";
+                }}
+                />
                 <div className="relative w-full flex items-center justify-center p-4 bg-white/50 rounded-2xl mb-5">
                     <img
                         src={domain.evolvedImageUrl}
