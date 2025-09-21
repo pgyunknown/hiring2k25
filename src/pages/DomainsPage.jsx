@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { domainsData } from "../data/domains.js";
 import DomainCard from "../components/DomainCard.jsx";
 import BackButton from "../components/BackButton.jsx";
+import { Footer } from "../components/Footer.jsx";
+
 
 const DomainsPage = ({ onNavigate }) => {
     const [expandedCardId, setExpandedCardId] = useState(null);
@@ -42,7 +44,9 @@ const DomainsPage = ({ onNavigate }) => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </main>
+        
     );
 };
 
