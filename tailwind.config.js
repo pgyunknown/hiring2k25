@@ -7,6 +7,7 @@ export default {
                 fredoka: ["Fredoka", "sans-serif"],
                 "pokemon-hollow": ["Pokemon Hollow", "sans-serif"],
                 "pokemon-solid": ["Pokemon Solid", "sans-serif"],
+                "swanley": ["Swanley Free", "sans-serif"]
             },
         },
     },

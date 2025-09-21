@@ -166,18 +166,19 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
 
                     <div
                         ref={cardRef}
-                        className="w-full aspect-[3/4] bg-[#1d1d1d] rounded-2xl p-4 relative overflow-hidden shadow-2xl"
+                        className="w-full aspect-[3/4] bg-[#e4ddfc] rounded-2xl p-4 relative overflow-hidden shadow-2xl"
                     >
                         {loading ||
                         !pokemon ||
                         !pokemonImageBase64 ||
                         !logoImageBase64 ? (
-                            <div className="text-white flex items-center justify-center h-full">
+                            <div className="text-black flex items-center justify-center h-full">
                                 Generating your card...
                             </div>
                         ) : (
                             <>
-                                <p className="absolute left-3 top-3 text-4xl md:text-5xl font-bold text-white/40 font-pokemon-hollow tracking-[6px] z-0">
+                            
+                                <p className="absolute left-3 top-3 text-4xl md:text-5xl font-black text-black/60 font-poppins  tracking-[2px] z-0">
                                     #{String(pokemon.id).padStart(4, "0")}
                                 </p>
                                 <div className="absolute right-3 top-1/2 -translate-y-1/2 flex flex-col items-center z-0">
@@ -186,7 +187,7 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
                                         .map((char, index) => (
                                             <span
                                                 key={index}
-                                                className="font-pokemon-hollow text-4xl md:text-5xl font-bold text-white capitalize tracking-widest leading-none"
+                                                className="font-pokemon-hollow text-4xl md:text-5xl text-black/60 capitalize tracking-widest leading-[103%]"
                                             >
                                                 {char}
                                             </span>
@@ -200,20 +201,20 @@ const CongratulationsPage = ({ domain, formData, onNavigate }) => {
                                     />
                                 </div>
                                 <div className="absolute bottom-4 left-4 text-left z-20">
-                                    <h3 className="text-3xl -mb-2 font-fredoka font-bold text-white capitalize">
+                                    <h3 className="text-3xl -mb-2 font-fredoka font-bold text-black capitalize">
                                         {formData.name || "Trainer"}
                                     </h3>
-                                    <p className="text-lg font-fredoka text-white uppercase tracking-wider mt-1">
+                                    <p className="text-lg font-fredoka text-black uppercase tracking-wider mt-1">
                                         {formData.usn || "N/A"}
                                     </p>
-                                    <p className="text-md -mt-1 font-fredoka text-white ">
+                                    <p className="text-md -mt-1 font-fredoka text-black ">
                                         {domain.name}
                                     </p>
                                 </div>
                                 <img
                                     src={logoImageBase64}
                                     alt="Small Logo"
-                                    className="absolute bottom-4 right-4 h-12 w-auto opacity-80 z-20"
+                                    className="absolute top-4 right-1 -mt-5 h-12 w-auto opacity-80 z-20"
                                 />
                             </>
                         )}

@@ -13,6 +13,11 @@
   src: url('./assets/fonts/Pokemon-Solid.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Swanley Free';
+  src: url('./assets/fonts/Swanley-free.ttf') format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
