@@ -7,6 +7,7 @@ import DomainQuestionsPage from "./pages/DomainQuestionsPage.jsx";
 import DomainFormPage from "./pages/DomainFormPage.jsx";
 import CongratulationsPage from "./pages/CongratulationsPage.jsx";
 import BackButton from "./components/BackButton.jsx";
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
     const [page, setPage] = useState("home");

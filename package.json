@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "dom-to-image-more": "^3.7.1",
     "firebase": "^12.3.0",
     "firewall": "^0.0.5",
