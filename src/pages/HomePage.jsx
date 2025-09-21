@@ -51,10 +51,9 @@ const HomePage = ({ onNavigate }) => {
 
                 <button
                     onClick={() => onNavigate("domains")}
-                    
-                    className="mt-2 w-48 sm:w-52 bg-yellow-400 text-gray-900 font-bold text-2xl py-3 px-6 rounded-xl border-[3px] border-black shadow-[6px_6px_0_0_#000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 active:bg-yellow-500 font-mono"
+                    className="mt-2 w-48 sm:w-52 bg-yellow-400 text-gray-900 font-fredoka font-semibold text-2xl py-3 px-4 rounded-xl border-[3px] border-black shadow-[6px_6px_0_0_#000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 active:bg-yellow-500"
                 >
-                    Apply
+                    Apply Now
                 </button>
             </div>
         </main>
