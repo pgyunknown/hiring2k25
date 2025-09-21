@@ -38,6 +38,7 @@ export const domainsData = [
             "We build apps, websites, automations, and tools that make college projects and events run smoothly — from registrations to certificates. No matter your level, you’ll learn by coding, debugging, and problem-solving with real projects. You’ll explore Python, React, Node.js, APIs, and Git while developing logical thinking and teamwork.\n\nAt MERIISE, your work has impact — the projects you create are used by students and staff, giving you practical experience you can carry anywhere.",
     },
     {
+
         id: "creative",
         name: "Creative",
         description:
@@ -45,7 +46,7 @@ export const domainsData = [
         imageUrl:
             "./bulbacreative.png", 
         evolvedImageUrl:
-            "./bulbaevo.png",
+            "./ivysaur.png",
         theme: {
             bg: "bg-green-400",
             button: "bg-green-600",
@@ -119,9 +120,9 @@ export const domainsData = [
         description:
             " Not sure where you fit yet? That’s completely fine — MERIISE is built for exploration.",
         imageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png", 
+            "./mewidk.png",
         evolvedImageUrl:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png", 
+            "./mewwhat.png",
         theme: {
             bg: "bg-pink-400",
             button: "bg-pink-600",

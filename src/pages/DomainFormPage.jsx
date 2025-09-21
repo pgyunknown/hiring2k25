@@ -79,7 +79,7 @@ const DomainFormPage = ({ domain, onNavigate }) => {
                     <img
                         src={domain.evolvedImageUrl}
                         alt={domain.name}
-                        className="h-24 font-pokemon-hollow absolute -left-12 -bottom-8"
+                        className="h-24 absolute -left-4 -bottom-8"
                     />
                     <h1
                         className="text-4xl text-center text-white font-pokemon-hollow tracking-[4px]"
@@ -90,7 +90,7 @@ const DomainFormPage = ({ domain, onNavigate }) => {
                     <img
                         src={domain.imageUrl}
                         alt={domain.name}
-                        className="h-20 absolute -right-8 -top-8"
+                        className="h-20 absolute -right-3 -top-8"
                     />
                 </div>
 
